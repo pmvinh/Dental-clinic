@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Home|Perfumery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="Nhap1.css">
+    <link rel="stylesheet" href="Nhap2.css">
+    <link rel="stylesheet" href="Nhap3.css">
+    <link rel="stylesheet" href="Nhap4.css">
+    <link rel="stylesheet" href="Nhap5.css">
+
+    <style>
+    .sidebar a {font-family: "Roboto", sans-serif}
+    body,h1,h2,h3,h4,h5.wide {font-family: "Montserrat", sans-serif;}
+    </style>
+  </head>
+
+<body class="content" style="max-width:1200px">
+  
+<!-- Sidebar/menu -->
+<nav class="sidebar bar-block white collapse top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="container1 display-container padding-16">
+    <i onclick="w3_close()" class="fa fa-remove hide-large button display-topright"></i>
+    <h3 class="wide"><b>PMVINH </b></h3>
+  </div>
+  <div class="padding-64 large text-grey" style="font-weight:bold">
+
+  <a href="index.html" class="bar-item button padding">Home</a>
+  <a href="PerfumeryAboutUs.html" class="bar-item button padding">About Us</a>  
+  <a href="PerfumeryFAQ.html" class="bar-item button padding">FAQ</a> 
+  <a href="PerfumeryStorePolice.html" class="bar-item button padding">Store Police</a> 
+  <a href="PerfumeryShop.html" class="bar-item button padding">Shop</a>
+  <a href="javascript:void(0)" class="bar-item button padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+  <a href="#footer" class="bar-item button padding">Contact</a> 
+  <a href="#Subscribe"  class="bar-item button padding">Subscribe</a> 
+
+  </div>
+
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="bar top hide-large black xlarge">
+  <div class="bar-item padding-24 wide">PMVINH</div>
+  <a href="javascript:void(0)" class="bar-item button padding-24 right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="overlay hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="container1 xlarge">
+    <p class="left">Perfumery</p>
+    <p class="right">
+<input type="search" id="site-search" name="q">
+<button id="search" style="font-size: 100%; margin: 0px;" >
+  <i class="fa fa-search " ></i>
+ 
+      
+      <!-- The Modal -->
+      <button id="cart" style="font-size: 100%; margin: 0px;" >
+        <i class="fa fa-shopping-cart " ></i>
+    </button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal1-title">Cart</h5>
+              <span class="close">&times;</span>
+          </div>
+          <div class="modal-body">
+              <div class="cart-row">
+                  <span class="cart-item cart-header cart-column">Product</span>
+                  <span class="cart-price cart-header cart-column">Price</span>
+                  <span class="cart-quantity cart-header cart-column">Total</span>
+              </div>
+              <div class="cart-items">
+
+              </div>
+              <div class="cart-total">
+                  <strong class="cart-total-title">Total:</strong>
+                  <span class="cart-total-price">0 ₽</span>
+              </div>
+          </div>
+
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary close-footer">Close</button>
+              <button type="button" class="btn btn-primary order">Pay</button>
+          </div>
+      </div>
+  </div>
+</nav>
+
+    </p>
+    
+  </header>
+
+  
+  <!-- Image header -->
+  <div class="display-container container1">
+    <img src="1.jpg" alt="Shope" style="width:100%">
+    <div class="display-topleft text-white" style="padding:24px 48px">
+      <h1 class="jumbo hide-small">New arrivals</h1>
+      <h1 class="hide-large hide-medium">New arrivals</h1>
+      <h1 class="hide-small">COLLECTION 2022</h1>
+      <p><a href="#perfumers" class="button black padding-large large">SHOP NOW</a></p>
+    </div>
+  </div>
+
+  <div class="container1 text-grey" id="perfumers">
+    <p>8 items</p>
+  </div>
+
+<!-- Product grid -->
+<div class="row">
+
+<section class="product">
+
+  <div class="col l3 s6">
+    <div class="container1">
+      <div class="display-container">
+        <img class="img-prd" src="Product9.jpg" alt="" style="width:100%">
+        <div class="display-middle display-hover">
+          <button type="button" class="btn btn-cart">Buy now <i class="fa fa-shopping-cart"></i></button>
+      </div>
+      <p class="content-product-h3">Lilybell 07</p>
+      <div class="price">
+      <span class="money"><b>7134 ₽</b></span>
+      </div>
+      </div>
+    </div>
+
+    <div class="container1">
+      <div class="display-container">
+        <img class="img-prd" src="Product11.jpg" alt="" style="width:100%">
+        <div class="display-middle display-hover">
+          <button type="button" class="btn btn-cart">Buy now <i class="fa fa-shopping-cart"></i></button>
+      </div>
+      <p class="content-product-h3">Lost Cherry 22</p>
+      <div class="price">
+      <span class="money"><b>5013 ₽</b></span>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col l3 s6">
+    <div class="container1">
+      <div class="display-container">
+        <img class="img-prd" src="Product5.jpg" alt="" style="width:100%">
+        <span class="tag display-topleft">New</span>
+        <div class="display-middle display-hover">
+          <button type="button" class="btn btn-cart">Buy now <i class="fa fa-shopping-cart"></i></button>
+      </div>
+      <p class="content-product-h3">Sandalwood 33</p>
+      <div class="price">
+      <span class="money"><b>4747 ₽</b></span>
+      </div>
+      </div>
+    </div>
+
+    <div class="container1">
+      <div class="display-container">
+        <img class="img-prd" src="Product6.jpg" alt="" style="width:100%">
+        <div class="display-middle display-hover">
+          <button type="button" class="btn btn-cart">Buy now <i class="fa fa-shopping-cart"></i></button>
+      </div>
+      <p class="content-product-h3">Musk Mallow 13</p>
+      <div class="price">
+      <span class="money"><b>4747 ₽</b></span>
+      </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="col l3 s6">
+      <div class="container1">
+        <div class="display-container">
+          <img class="img-prd" src="Product10.jpg" alt="" style="width:100%">
+          <div class="display-middle display-hover">
+            <button type="button" class="btn btn-cart">Buy now <i class="fa fa-shopping-cart"></i></button>
+        </div>
+        <p class="content-product-h3">Osmanthus 16</p>
+        <div class="price">
+        <span class="money"><b>4747 ₽</b></span>
+        </div>
+        </div>
+      </div>
+
+      <div class="container1">
+        <div class="display-container">
+          <img class="img-prd" src="Product12.jpg" alt="" style="width:100%">
+          <div class="display-middle display-hover">
+            <button type="button" class="btn btn-cart">Buy now <i class="fa fa-shopping-cart"></i></button>
+        </div>
+        <p class="content-product-h3">Blackcurrant 10</p>
+        <div class="price">
+        <span class="money"><b>4747 ₽</b></span>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col l3 s6">
+      <div class="container1">
+        <div class="display-container">
+          <img class="img-prd" src="Product1.jpg" alt="" style="width:100%">
+          <div class="display-middle display-hover">
+            <button type="button" class="btn btn-cart">Buy now <i class="fa fa-shopping-cart"></i></button>
+        </div>
+        <p class="content-product-h3">Amber Oud 09</p>
+        <div class="price">
+        <span class="money"><b>4482 ₽</b></span>
+        </div>
+        </div>
+      </div>
+
+      <div class="container1">
+        <div class="display-container">
+          <img class="img-prd" src="Product8.jpg" alt="" style="width:100%">
+          <span class="tag display-topleft">Sale</span>
+          <div class="display-middle display-hover">
+            <button type="button" class="btn btn-cart">Buy now <i class="fa fa-shopping-cart"></i></button>
+        </div>
+        <p class="content-product-h3">Gardenia</p>
+        <div class="price">
+        <span class="money"><b>4482 ₽</b></span>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  </div>
+
+<br>
+  
+  <!-- All About Us -->
+<div class="AllAboutUs container1 ">
+  <img src="2.jpg" alt="All About Us" style="width:100%; filter:brightness(70%)">
+    <div class="display-topleft text-white" style="padding:50% 48px">
+    <h1 class="AllAboutUs-text jumbo hide-small ">ALL ABOUT US</h1>
+    <h1 class="hide-large hide-medium ">ALL ABOUT US</h1>
+    <h1 class="hide-small hide-medium" style="text-align:center; line-height:1.875em ; font-size:15px;">Since day one, we’ve been working tirelessly in order to expand our product offerings and make our customers experience even better. We’re proud of how far we’ve come, yet remain committed to performing even better.</h1>
+    <h1 class="hide-small hide-medium" style="text-align:center; line-height:1.875em ; font-size:15px;">Our collections are carefully selected. Delivery options and payment methods generous and flexible. Browse through our product gallery and experience shopping with PMVINH for yourself. Please don’t hesitate to contact us with questions, comments or suggestions.</h1>
+    <p><a href="#" class="button black padding-large large">Get in Touch</a></p>
+  </div>
+  </div>
+
+<br>
+
+  <!-- Subscribe section -->
+  <div class="container1 black padding-32 " id="Subscribe">
+    <h1>Subscribe</h1>
+    <p>To get special offers and VIP treatment:</p>
+    <p><input class="input border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button type="button" class="button red margin-bottom">Subscribe</button>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="padding-64 light-grey small center container1" id="footer">
+    <div class="row-padding">
+      <div class="col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="input border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="input border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="input border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="input border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="button block black">Send</button>
+        </form>
+      </div>
+
+      <div class="col s4">
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">We're hiring</a></p>
+        <p><a href="#">Support</a></p>
+        <p><a href="#">Find store</a></p>
+        <p><a href="#">Shipment</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Gift card</a></p>
+        <p><a href="#">Return</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="col s4 justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+        <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <br>
+        <i class="fa fa-facebook-official hover-opacity large"></i>
+        <i class="fa fa-instagram hover-opacity large"></i>
+        <i class="fa fa-snapchat hover-opacity large"></i>
+        <i class="fa fa-pinterest-p hover-opacity large"></i>
+        <i class="fa fa-twitter hover-opacity large"></i>
+        <i class="fa fa-linkedin hover-opacity large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="black center padding-24">Made with <a href="https://www.facebook.com/vinh.thichyeu/" title="W3.CSS" target="_blank" class="hover-opacity">PHAM THE VINH</a></div>
+  <div class="black center padding-24">Copyright © 2022 PMVINH Vietnam. Powered by PHAM THE VINH</div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="modal">
+  <div class="modal-content animate-zoom" style="padding:32px">
+    <div class="container white center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove right button transparent xxlarge"></i>
+      <h2 class="wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="input border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="button padding-large red margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script src='Nhap1.js'></script>
+</body>
+</html>
