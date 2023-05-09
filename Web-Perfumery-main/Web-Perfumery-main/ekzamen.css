@@ -1,0 +1,238 @@
+/* pract2 */
+.box2{
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  border: 1px solid black;
+  padding: 100px;
+  margin: 20px;
+  }
+.box:hover{
+  background-color: bisque;
+  box-shadow: 10px 10px 8px #888888;
+}
+
+/* pract3 */
+.box3{
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 200px solid #555;
+  }
+.flex-container{
+  display: flex;
+  justify-content: center;
+}
+
+/* pract4 */
+.box4 {
+  width: 100px;
+  height: 100px;
+  background:tomato;
+  color: #FFF;
+  padding: 100px;
+  margin: 20px;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: 5s linear;
+}
+.box4:hover {
+  opacity: 0;
+}
+
+/* pract5 */
+.dropbtn {
+  background-color: cornflowerblue;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: cornflowerblue;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown a:hover {background-color: #ddd;}
+.show {display: block;}
+
+/* pract6 */
+.box6{
+  color: blue;
+  font-size: 40px;
+}
+@media screen and (max-width: 1600px) {
+  .box6{
+    color: green;
+  }
+}
+@media screen and (max-width: 600px) {
+  .box6{
+    color: red;
+  }
+}
+
+/* pract9 */
+.box9{
+  font-size: 25px;
+  border: 5px solid red;
+  position: absolute;
+  margin: 0;
+}
+.box9:hover {
+  height: 250px;
+  width: 250px;
+  font-size: 100px;
+}
+
+/* pract10 */
+.box10{
+  margin: 100px;
+  font-size: 20px;
+}
+
+/* pract11 */
+header {
+  position: fixed;
+  top: 0;
+  width: 10%; /*note:100%*/
+  height: auto;
+  background: coral;
+}
+h1 {
+  text-align: center;
+  color: white;
+}
+
+/* pract12 */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 10%; /*note:100%*/
+  height: auto;
+  background: coral;
+}
+h1 {
+  text-align: center;
+  color: white;
+}
+
+/* pract13 */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+
+/* pract16 */
+html {
+  background-image: url(http://i.stack.imgur.com/kx8MT.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* pract17 */
+body::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: orange;
+  /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: blue;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid orange;
+  /* creates padding around scroll thumb */
+}
+
+/* pract18 */
+#a {
+  width: 25%;
+  height: 25%;
+  object-fit: cover;
+  transition: all 0.5s;
+}
+
+ /* pract19 */
+ #b {
+  width: 200px;
+  height: 200px;
+  background-color: cornflowerblue;
+}
+
+/*pract20*/
+#a {
+  /*container*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#b {
+  /*element template*/
+  margin: 5px;
+}
+
+/* pract23 */
+:root {
+  --width: 100px;
+  --height: var(--width);
+  --pos: absolute;
+}
+
+#a {
+  width: var(--width);
+  height: var(--height);
+  background-color: red;
+  position: var(--pos);
+  top: 0;
+  left: 0;
+}
+
+#b {
+  width: var(--width);
+  height: var(--height);
+  background-color: blue;
+  position: var(--pos);
+  top: 50px;
+  left: 50px;
+}
+
